@@ -1,0 +1,3 @@
+# Ignore a.out and .cbp files
+**/a.out
+**/*.cbp
