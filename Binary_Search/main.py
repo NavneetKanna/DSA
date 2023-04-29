@@ -1,3 +1,7 @@
+# arr = sorted array
+# Time complexity = O(logn)
+
+
 def binary_search(arr, val):
     low = 0
     high = len(arr) - 1
