@@ -1,3 +1,7 @@
+# Time Complexity = O(no of comparisons per step * no of steps) = O(nlogn)
+# Space Complexity = O(n)
+
+
 def divide(arr):
     if len(arr) <= 1:
         return arr 
