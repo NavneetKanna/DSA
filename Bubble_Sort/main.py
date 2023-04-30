@@ -17,6 +17,6 @@ def bubble_sort(arr):
     print(arr)
 
 
-inp = [7, 4, 9, 1, 5]
-
-bubble_sort(inp)
+if __name__ == '__main__':
+    inp = [7, 4, 9, 1, 5]
+    bubble_sort(inp)

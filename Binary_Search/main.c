@@ -3,7 +3,7 @@
 
 
 /*
-When we pass an array to a function in C, you are actually passing a pointer to the first element of the array.
+When we pass an array to a function in C, we are actually passing a pointer to the first element of the array.
 Therefore, the size of the array is not available inside the function, and you must pass it as a separate argument.
 */
 
