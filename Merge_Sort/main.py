@@ -1,27 +1,19 @@
 # Time Complexity = O(no of comparisons per step * no of steps) = O(nlogn)
 # Space Complexity = O(n)
 
-
+# The reason we dont do len() - 1 is because // returns the floor, so if we 
+# subtract 1 we are shiftting the mid by 1 which is not correct 
 def divide(arr):
-    print(f"----------")
-    print(f"arr {arr}")
     if len(arr) <= 1:
-        print(f"len of arr <= 1 {arr}")
         return arr 
     else:
-        print(f"len {len(arr)}")
-        mid = (len(arr) - 1 )// 2
-        print(f"mid {mid}")
+        mid = len(arr) // 2
         left_half = divide(arr[:mid])
         right_half = divide(arr[mid:])
 
         return merge(left_half, right_half)
     
 def merge(left, right):
-    print("merge")
-    print(f"left {left}")
-    print(f"right {right}")
-
     i = 0
     j = 0
 
