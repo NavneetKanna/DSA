@@ -84,6 +84,25 @@ class BinaryTree:
             
         print(result)
 
+    def bfs(self):
+        queue = deque()
+        result = []
+
+        queue.append(self)
+
+        while queue:
+            visited = queue.popleft()
+
+            result.append(visited.value)
+
+            if visited.left_node:
+                queue.append(visited.left_node)
+            if visited.right_node:
+                queue.append(visited.right_node)
+
+        print(result)
+
+
 #         1
 #        /  \
 #       2    5
@@ -106,6 +125,8 @@ if __name__ == "__main__":
     e_node = c_node.left_node
     f_node = c_node.right_node
 
+    print("BFS using queue")
+    a_node.bfs()
     print("DFS using stack")
     a_node.dfs()
     print("DFS using pre")
